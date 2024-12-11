@@ -1,0 +1,12 @@
+total = 0
+
+while True:
+    try:
+        user = int(input('digite 0 para sair ou qualquer outro número para somar:\n'))
+        if user == 0:
+            break
+        else:
+           total = total + user
+    except ValueError:
+        print('Por favor digite apenas números válidos')
+print(total)
